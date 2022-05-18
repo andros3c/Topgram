@@ -1,0 +1,202 @@
+:root {
+--hitam : black;
+--blue : #00376b;
+--white: #dbdbdb;
+--max-width: 62.1875rem;
+--padding: 0 1.875rem;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    top:0;
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    
+}
+.navbar{
+   
+    display: flex;
+   
+    padding: 0 30px;
+  width: var(--max-width);
+  box-sizing: border-box;
+   
+}
+.logo{
+    
+    text-decoration: none;
+    color:var(--hitam);
+}
+.container{
+    
+    /* justify-content: center; */
+max-width: var(--max-width);
+   margin-left: auto;
+   margin-right: auto;
+    /* display: flex;
+    justify-content: center; */
+   
+   
+} 
+
+
+.profile{
+   
+    margin-top: 108px;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between;
+     */
+    margin-bottom: 40px;
+   
+    
+}
+.foto{
+   
+    flex: auto;
+    /* flex : auto; */
+}
+.fotoProfil{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 9.375rem;
+    height: 9.375rem;
+    background-color: var(--white);
+    clip-path: circle();
+}
+.biosection{
+   
+    flex: auto;
+   
+}
+h2{
+    font-size: 1.5em;
+    
+    
+}
+
+h2.username{
+    
+    font-weight: normal;
+    margin-top: -1px;
+}
+
+
+.userfollow{
+margin-left: -2.5rem;
+display: flex;
+list-style-type: none;
+font-size: 16px;
+gap:2.5rem;
+}
+.boldy{
+    font-weight: bolder;
+    padding-right: 5px;
+}
+
+
+
+.nama{
+    font-size: 16px;
+    
+    font-weight: bolder;
+}
+.bio{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.linkig{
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+.biodesc{
+    line-height: 24px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+}
+
+.konten{
+width: 100%;
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(auto-fit,minmax(18.3125rem, max-content));
+gap: 1.75rem;
+}
+
+
+.image_wrapper{
+    position: relative;
+}
+.fotokonten{
+ 
+    width:293px;
+    height: 293px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+ .icon{
+     display: flex;
+     top:0;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+ width: 100%;
+ height: 100%;
+ 
+ }
+ 
+ .image_wrapper:hover .icon{
+     height: 100%;
+     width: 100%;
+     opacity: 1;
+     background-color: rgba(0, 0, 0, 0.4)
+ }
+ .icon span {
+     color: white;
+     font-weight: bold;
+ }
+ .like_wrapper{
+     display: flex;
+   
+     column-gap:10px;
+ }
+ .comment_wrapper{
+    display: flex;
+   
+    column-gap:10px;
+}
+
+ @media only screen and (max-width: 564px) {
+     .profile{
+         flex-direction: column;
+     }
+    
+  }
+
+  
+  
